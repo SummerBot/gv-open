@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>GV Assistant · Open Google Voice</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 24px; background: #f6f7fb; color: #172033;
+    }
+    main {
+      width: min(100%, 440px); padding: 30px 24px; border-radius: 24px;
+      background: #fff; box-shadow: 0 12px 40px rgba(22, 34, 60, .10); text-align: center;
+    }
+    .mark { font-size: 42px; margin-bottom: 10px; }
+    h1 { font-size: 25px; margin: 0 0 10px; }
+    p { line-height: 1.55; color: #526078; margin: 10px 0 20px; }
+    a.button {
+      display: block; padding: 15px 18px; border-radius: 13px; color: #fff;
+      background: #2867d8; text-decoration: none; font-weight: 650; font-size: 16px;
+    }
+    a.button:active { opacity: .8; }
+    .note { font-size: 13px; margin-top: 18px; color: #69758a; }
+    .fallback { font-size: 14px; margin-top: 18px; }
+    .fallback a { color: #245dbb; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #111827; color: #f3f4f6; }
+      main { background: #1f2937; box-shadow: none; }
+      p, .note { color: #b8c2d3; }
+      .fallback a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">💬</div>
+    <h1>Open Google Voice</h1>
+    <p>Use the button below to run your <strong>GV Open</strong> shortcut and launch the Google Voice app.</p>
+    <a class="button" href="shortcuts://run-shortcut?name=GV%20Open">Open GV Open Shortcut</a>
+    <p class="note">This page does not read, store, or transmit your SMS drafts or clipboard contents.</p>
+    <p class="fallback">If the shortcut does not open inside Telegram, open this page in Safari and tap the button again.</p>
+  </main>
+</body>
+</html>
